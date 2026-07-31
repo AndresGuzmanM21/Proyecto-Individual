@@ -1,11 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi proyecto</title>
-</head>
-<body>
+<!-- Linea 9 para poder colocar estilo -->
+    <link rel="stylesheet" href="css/estilos.css">
     
+    
+    <!-- Se empieza a desarrolar la pagina -->
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+
+        <h2>INICIO</h2>
+
+        <button>Panel</button>
+        <button>Mis tareas</button>
+        <button>Proyectos</button>
+        <button>Calendario</button>
+
+        <hr>
+
+        <p>⚙ Configuración</p>
+        <p>❓ Ayuda</p>
+
+        <button class="nueva">
+            + Nueva tarea
+        </button>
+
+    </aside>
+
+
+    <!-- Contenido -->
+    <main class="principal">
+
+        <!-- Barra superior -->
+        <header>
+
+            <input
+                type="text"
+                placeholder="Buscar tareas..."
+            >
+
+        </header>
+
+        <section class="bienvenida">
+
+            <h1>Bienvenido, Andrés</h1>
+            <p>Resumen</p>
+
+        </section>
+
+
+        <!-- Tarjetas -->
+        <section class="tarjetas">
+
+            <div class="card">
+                <h2>12</h2>
+                <p>Tareas Totales</p>
+            </div>
+
+            <div class="card">
+                <h2>5</h2>
+                <p>Por hacer</p>
+            </div>
+
+            <div class="card">
+                <h2>2</h2>
+                <p>Completadas</p>
+            </div>
+
+        </section>
+
+
+        <!-- Contenido principal -->
+        <section class="contenido">
+
+            <div class="tareas">
+
+                <h2>Mis tareas</h2>
+
+                <table>
+
+                    <tr>
+                        <td>Descripción...</td>
+                        <td>20 MAY</td>
+                        <td>...</td>
+                    </tr>
+
+                    <tr>
+                        <td>Descripción...</td>
+                        <td>20 MAY</td>
+                        <td>...</td>
+                    </tr>
+
+                    <tr>
+                        <td>Descripción...</td>
+                        <td>20 MAY</td>
+                        <td>...</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+            <div class="proyectos">
+
+                <h2>Proyectos</h2>
+
+            </div>
+
+            <div class="prioridades">
+
+                <h2>Prioridades</h2>
+
+            </div>
+
+            <div class="proximas">
+
+                <h2>Próximas tareas</h2>
+
+            </div>
+
+            <div class="calendario">
+
+                <h2>Calendario</h2>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
 </body>
 </html>
+<!-- Cierre de desarollo pagina -->
