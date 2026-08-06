@@ -3,112 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi proyecto</title>
-    <!-- Linea 9 para poder colocar estilo -->
-    <link rel="stylesheet" href="css/estilos.css" />
+    <title>TaskFlow</title>
 
-    <!-- Se empieza a desarrolar la pagina -->
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
 
+  <!-- Se empieza a desarrolar la pagina -->
   <body>
     <div class="contenedor">
-      <!-- Menú lateral -->
+      <!-- MENU LATERAL IZQUIERDO -->
       <aside class="sidebar">
-        <h2>INICIO</h2>
+        <div class="menu-superior">
+          <h2>TaskFlow</h2>
+          <button>🏠 Panel</button>
+          <button>📋 Mis tareas</button>
+          <button>📁 Proyectos</button>
+          <button>📅 Calendario</button>
+        </div>
 
-        <button>Panel</button>
-        <button>Mis tareas</button>
-        <button>Proyectos</button>
-        <button>Calendario</button>
-
-        <hr />
-
-        <p>⚙ Configuración</p>
-        <p>❓ Ayuda</p>
-
-        <button class="nueva">+ Nueva tarea</button>
+        <div class="menu-inferior">
+          <button class="nueva">+ Nueva tarea</button>
+          <p>⚙ Configuración</p>
+          <p>❓ Ayuda</p>
+          <!-- Parrafo -->
+        </div>
       </aside>
 
-      <!-- Contenido -->
+      <!-- CONTENIDO PRINCIPAL -->
       <main class="principal">
-        <!-- Barra superior -->
-        <header class="container-buscardor">
-          <input type="text" placeholder="Buscar tareas..." />
+        <header class="barra-superior">
+          <div class="buscador">
+            <input type="text" placeholder="🔍 Buscar tareas..." />
+          </div>
+          <div class="perfil">
+            <div class="notificaciones">
+              🔔
+              <span>19</span>
+              <!-- span agrega numero a notificaciones -->
+            </div>
+
+            <img src="img/perfil.jpg" alt="Foto de perfil" />
+            <div class="usuario">
+              <h4>Andrés</h4>
+              <p>Perfil</p>
+            </div>
+          </div>
         </header>
 
-        <div class="container-main">
-          <div class="izquierda">
-            <section class="bienvenida">
-              <h1>Bienvenido, Andrés</h1>
-              <p>Resumen</p>
-            </section>
-            <section class="tarjetas">
-              <div class="card">
-                <h2>12</h2>
-                <p>Tareas Totales</p>
-              </div>
+        <!-- Bienvenida -->
 
-              <div class="card">
-                <h2>5</h2>
-                <p>Por hacer</p>
-              </div>
+        <section class="bienvenida">
+          <h1>¡Hola, Andrés! 👋</h1>
+          <p>Bienvenido nuevamente.</p>
+        </section>
 
-              <div class="card">
-                <h2>2</h2>
-                <p>Completadas</p>
-              </div>
-            </section>
+        <!-- Tarjetas -->
 
+        <section class="tarjetas">
+          <div class="card">
+            <h2>12</h2>
+            <p>Tareas Totales</p>
+          </div>
+
+          <div class="card">
+            <h2>5</h2>
+            <p>Pendientes</p>
+          </div>
+
+          <div class="card">
+            <h2>2</h2>
+            <p>Completadas</p>
+          </div>
+        </section>
+
+        <!-- Contenido principal -->
+        <div class="contenido">
+          <section class="izquierda">
             <div class="tareas">
               <h2>Mis tareas</h2>
 
+              <!-- table muestra informacion organizada en fila seccion de mis tareas -->
               <table>
-                <tr>
-                  <td>Descripción...</td>
-                  <td>20 MAY</td>
-                  <td>...</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Tarea</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
 
-                <tr>
-                  <td>Descripción...</td>
-                  <td>20 MAY</td>
-                  <td>...</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Diseñar Login</td>
+                    <td>20 MAY</td>
+                    <td>Pendiente</td>
+                  </tr>
 
-                <tr>
-                  <td>Descripción...</td>
-                  <td>20 MAY</td>
-                  <td>...</td>
-                </tr>
+                  <tr>
+                    <td>Crear Dashboard</td>
+                    <td>21 MAY</td>
+                    <td>En proceso</td>
+                  </tr>
+
+                  <tr>
+                    <td>Terminar CSS</td>
+                    <td>22 MAY</td>
+                    <td>Completada</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
-          </div>
 
-          <div class="derecha">
+            <div class="container-inferior">
+              <div class="proximas">
+                <h2>Próximas tareas</h2>
+
+                <ul>
+                  <li>Estudiar JavaScript</li>
+                  <li>Hacer responsive</li>
+                  <li>Subir proyecto a GitHub</li>
+                </ul>
+              </div>
+
+              <div class="calendario">
+                <h2>Calendario</h2>
+                <p>Julio 2026</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Lado derecho -->
+
+          <section class="derecha">
             <div class="proyectos">
               <h2>Proyectos</h2>
+              <p>Dashboard</p>
+              <p>Portafolio</p>
+              <p>Tienda Virtual</p>
             </div>
 
             <div class="prioridades">
               <h2>Prioridades</h2>
+              <p>Dashboard</p>
+              <p>Portafolio</p>
+              <p>JavaScript</p>
             </div>
-          </div>
-
-          <!-- Tarjetas -->
-        </div>
-        <!-- Contenido principal -->
-
-        <div class="container-secondary">
-          <div class="proximas">
-            <h2>Próximas tareas</h2>
-          </div>
-
-          <div class="calendario">
-            <h2>Calendario</h2>
-          </div>
+          </section>
         </div>
       </main>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
 <!-- Cierre de desarollo pagina -->
